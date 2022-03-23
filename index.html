@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Static Template</title>
+  </head>
+
+  <body id="root">
+    <div>
+      <!-- Header includes logo,favourites,searchbar,bell-Icon,profile picture -->
+      <div id="header">
+        <iframe src="header.html"> </iframe>
+      </div>
+      <!-- Content -->
+      <content id="content">
+        <!-- Main -->
+        <main>
+          <div id="main">
+            <!-- Images  -->
+            <div class="images">
+              <img src="images/mood-booster.jpg" alt="mood-booster" />
+              <img src="images/mashup.jpg" alt="mashup" />
+              <img src="images/2000's-mix.jpg" alt="2000's-mix" />
+            </div>
+            <br /><br />
+            <!-- Latest Releases -->
+            <div class="latest-releases">
+              <h3>
+                Latest Release
+              </h3>
+              <div class="container">
+                <div class="ltRlsCard">
+                  <!-- Image of song -->
+                  <div class="ltRlsImgBx">
+                    <div class="content-overlay"></div>
+                    <img src="images/boyfriend.png" alt="Boyfriend" />
+                    <div class="onOffButton">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        version="1.1"
+                        id="Capa_1"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 17.804 17.804"
+                        xml:space="preserve"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M2.067,0.043C2.21-0.028,2.372-0.008,2.493,0.085l13.312,8.503c0.094,0.078,0.154,0.191,0.154,0.313    c0,0.12-0.061,0.237-0.154,0.314L2.492,17.717c-0.07,0.057-0.162,0.087-0.25,0.087l-0.176-0.04    c-0.136-0.065-0.222-0.207-0.222-0.361V0.402C1.844,0.25,1.93,0.107,2.067,0.043z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <!-- Details of Latest song -->
+                    <div class="content">
+                      <h4>
+                        Boyfriend<br />
+                        <span>FEB 16, 2022</span>
+                      </h4>
+                      <!--  list  -->
+                      <div class="songlist">
+                        <input type="checkbox" id="LatestSonglist" />
+                        <ul class="toggle-content">
+                          <li>
+                            Play New
+                          </li>
+                          <li>
+                            Add To Queue
+                          </li>
+                          <li>
+                            Add To Favourites
+                          </li>
+                          <li>
+                            Get Info
+                          </li>
+                        </ul>
+                        <label for="LatestSonglist" class="dotted-menu">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            data-name="Layer 1"
+                            height="25"
+                            id="Layer_1"
+                            viewBox="0 0 200 200"
+                            width="100%"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M85,100a15,15,0,1,0,15-15A15,15,0,0,0,85,100Zm-55,0A15,15,0,1,0,45,85,15,15,0,0,0,30,100Zm110,0a15,15,0,1,0,15-15,15,15,0,0,0-15,15Z"
+                            />
+                          </svg>
+                          <!--  <iframe src="dotted-menu.html"  class="dottedMenu"></iframe> -->
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ltRlsCard">
+                  <!-- Image of song -->
+                  <div class="ltRlsImgBx">
+                    <div class="content-overlay"></div>
+                    <img
+                      src="images/fingers-crossed.jpeg"
+                      alt="fingers-crossed"
+                    />
+                    <div class="onOffButton">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        version="1.1"
+                        id="Capa_1"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 17.804 17.804"
+                        xml:space="preserve"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M2.067,0.043C2.21-0.028,2.372-0.008,2.493,0.085l13.312,8.503c0.094,0.078,0.154,0.191,0.154,0.313    c0,0.12-0.061,0.237-0.154,0.314L2.492,17.717c-0.07,0.057-0.162,0.087-0.25,0.087l-0.176-0.04    c-0.136-0.065-0.222-0.207-0.222-0.361V0.402C1.844,0.25,1.93,0.107,2.067,0.043z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <!-- Details of Latest song -->
+                    <div class="content">
+                      <h4>
+                        Fingers Crossed<br />
+                        <span>JAN 5, 2022</span>
+                      </h4>
+                      <!--  list  -->
+                      <div class="songlist">
+                        <input type="checkbox" id="LatestSonglist1" />
+
+                        <ul class="toggle-content">
+                          <li>
+                            Play New
+                          </li>
+                          <li>
+                            Add To Queue
+                          </li>
+                          <li>
+                            Add To Favourites
+                          </li>
+                          <li>
+                            Get Info
+                          </li>
+                        </ul>
+                        <label for="LatestSonglist1" class="dotted-menu">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            data-name="Layer 1"
+                            height="25"
+                            id="Layer_1"
+                            viewBox="0 0 200 200"
+                            width="100%"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M85,100a15,15,0,1,0,15-15A15,15,0,0,0,85,100Zm-55,0A15,15,0,1,0,45,85,15,15,0,0,0,30,100Zm110,0a15,15,0,1,0,15-15,15,15,0,0,0-15,15Z"
+                            />
+                          </svg>
+                          <!--  <iframe src="dotted-menu.html"  class="dottedMenu"></iframe> -->
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ltRlsCard">
+                  <!-- Image of song -->
+                  <div class="ltRlsImgBx">
+                    <div class="content-overlay"></div>
+                    <img src="images/long-drive.jpg" alt="long-drive" />
+                    <div class="onOffButton">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        version="1.1"
+                        id="Capa_1"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 17.804 17.804"
+                        xml:space="preserve"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M2.067,0.043C2.21-0.028,2.372-0.008,2.493,0.085l13.312,8.503c0.094,0.078,0.154,0.191,0.154,0.313    c0,0.12-0.061,0.237-0.154,0.314L2.492,17.717c-0.07,0.057-0.162,0.087-0.25,0.087l-0.176-0.04    c-0.136-0.065-0.222-0.207-0.222-0.361V0.402C1.844,0.25,1.93,0.107,2.067,0.043z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <!-- Details of Latest song -->
+                    <div class="content">
+                      <h4>
+                        Long Drives<br />
+                        <span>FEB 16, 2022</span>
+                      </h4>
+                      <!--  list  -->
+                      <div class="songlist">
+                        <input type="checkbox" id="LatestSonglist2" />
+
+                        <ul class="toggle-content">
+                          <li>
+                            Play New
+                          </li>
+                          <li>
+                            Add To Queue
+                          </li>
+                          <li>
+                            Add To Favourites
+                          </li>
+                          <li>
+                            Get Info
+                          </li>
+                        </ul>
+                        <label for="LatestSonglist2" class="dotted-menu">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            data-name="Layer 1"
+                            height="25"
+                            id="Layer_1"
+                            viewBox="0 0 200 200"
+                            width="100%"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M85,100a15,15,0,1,0,15-15A15,15,0,0,0,85,100Zm-55,0A15,15,0,1,0,45,85,15,15,0,0,0,30,100Zm110,0a15,15,0,1,0,15-15,15,15,0,0,0-15,15Z"
+                            />
+                          </svg>
+                          <!--  <iframe src="dotted-menu.html"  class="dottedMenu"></iframe> -->
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ltRlsCard">
+                  <!-- Image of song -->
+                  <div class="ltRlsImgBx">
+                    <div class="content-overlay"></div>
+                    <img src="images/Beqaaboo.jpg" alt="Beqaaboo" />
+                    <div class="onOffButton">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        version="1.1"
+                        id="Capa_1"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 17.804 17.804"
+                        xml:space="preserve"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M2.067,0.043C2.21-0.028,2.372-0.008,2.493,0.085l13.312,8.503c0.094,0.078,0.154,0.191,0.154,0.313    c0,0.12-0.061,0.237-0.154,0.314L2.492,17.717c-0.07,0.057-0.162,0.087-0.25,0.087l-0.176-0.04    c-0.136-0.065-0.222-0.207-0.222-0.361V0.402C1.844,0.25,1.93,0.107,2.067,0.043z"
+                        />
+                      </svg>
+                    </div>
+                    <div class="onButton">
+                      <svg
+                        role="img"
+                        height="16"
+                        width="16"
+                        viewBox="0 0 16 16"
+                        class="Svg-sc-1bi12j5-0 hDgDGI"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M2.7 1a.7.7 0 00-.7.7v12.6a.7.7 0 00.7.7h2.6a.7.7 0 00.7-.7V1.7a.7.7 0 00-.7-.7H2.7zm8 0a.7.7 0 00-.7.7v12.6a.7.7 0 00.7.7h2.6a.7.7 0 00.7-.7V1.7a.7.7 0 00-.7-.7h-2.6z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <!-- Details of Latest song -->
+                    <div class="content">
+                      <h4>
+                        Beqaaboo<br />
+                        <span>FEB 14, 2022</span>
+                      </h4>
+                      <!--  list  -->
+                      <div class="songlist">
+                        <input type="checkbox" id="LatestSonglist3" />
+
+                        <ul class="toggle-content">
+                          <li>
+                            Play New
+                          </li>
+                          <li>
+                            Add To Queue
+                          </li>
+                          <li>
+                            Add To Favourites
+                          </li>
+                          <li>
+                            Get Info
+                          </li>
+                        </ul>
+                        <label for="LatestSonglist3" class="dotted-menu">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            data-name="Layer 1"
+                            height="25"
+                            id="Layer_1"
+                            viewBox="0 0 200 200"
+                            width="100%"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M85,100a15,15,0,1,0,15-15A15,15,0,0,0,85,100Zm-55,0A15,15,0,1,0,45,85,15,15,0,0,0,30,100Zm110,0a15,15,0,1,0,15-15,15,15,0,0,0-15,15Z"
+                            />
+                          </svg>
+                          <!--  <iframe src="dotted-menu.html"  class="dottedMenu"></iframe> -->
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Popular Artists -->
+            <div class="popular-artists">
+              <h3>
+                Popular Artists
+              </h3>
+              <ul>
+                <li>
+                  <div class="artsts">
+                    <div class="content-overlay"></div>
+                    <button onclick="document.location='artists.html'">
+                      <img src="images/AR-Rahman.jpg" alt="AR Rehman" />
+                      <div class="onOffButton">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          version="1.1"
+                          id="Capa_1"
+                          x="0px"
+                          y="0px"
+                          viewBox="0 0 17.804 17.804"
+                          xml:space="preserve"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M2.067,0.043C2.21-0.028,2.372-0.008,2.493,0.085l13.312,8.503c0.094,0.078,0.154,0.191,0.154,0.313    c0,0.12-0.061,0.237-0.154,0.314L2.492,17.717c-0.07,0.057-0.162,0.087-0.25,0.087l-0.176-0.04    c-0.136-0.065-0.222-0.207-0.222-0.361V0.402C1.844,0.25,1.93,0.107,2.067,0.043z"
+                          />
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                  <br />
+                  <p>AR Rahman</p>
+                </li>
+                <li>
+                  <div class="artsts">
+                    <div class="content-overlay"></div>
+                    <button onclick="document.location='artists.html'">
+                      <img src="images/Ed-sheeran.jpg" alt="Ed Sheeran" />
+                      <div class="onOffButton">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          version="1.1"
+                          id="Capa_1"
+                          x="0px"
+                          y="0px"
+                          viewBox="0 0 17.804 17.804"
+                          xml:space="preserve"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M2.067,0.043C2.21-0.028,2.372-0.008,2.493,0.085l13.312,8.503c0.094,0.078,0.154,0.191,0.154,0.313    c0,0.12-0.061,0.237-0.154,0.314L2.492,17.717c-0.07,0.057-0.162,0.087-0.25,0.087l-0.176-0.04    c-0.136-0.065-0.222-0.207-0.222-0.361V0.402C1.844,0.25,1.93,0.107,2.067,0.043z"
+                          />
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                  <br />
+                  <p>Ed Sheeran</p>
+                </li>
+                <li>
+                  <div class="artsts">
+                    <div class="content-overlay"></div>
+                    <button onclick="document.location='artists.html'">
+                      <img src="images/shawn-mendes.jpg" alt="Shawn Mendes" />
+                      <div class="onOffButton">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          version="1.1"
+                          id="Capa_1"
+                          x="0px"
+                          y="0px"
+                          viewBox="0 0 17.804 17.804"
+                          xml:space="preserve"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M2.067,0.043C2.21-0.028,2.372-0.008,2.493,0.085l13.312,8.503c0.094,0.078,0.154,0.191,0.154,0.313    c0,0.12-0.061,0.237-0.154,0.314L2.492,17.717c-0.07,0.057-0.162,0.087-0.25,0.087l-0.176-0.04    c-0.136-0.065-0.222-0.207-0.222-0.361V0.402C1.844,0.25,1.93,0.107,2.067,0.043z"
+                          />
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                  <br />
+                  <p>Shawn Mendes</p>
+                </li>
+                <li>
+                  <div class="artsts">
+                    <div class="content-overlay"></div>
+                    <button onclick="document.location='artists.html'">
+                      <img src="images/Badshah.jpg" alt="Badshah" />
+                      <div class="onOffButton">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          version="1.1"
+                          id="Capa_1"
+                          x="0px"
+                          y="0px"
+                          viewBox="0 0 17.804 17.804"
+                          xml:space="preserve"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M2.067,0.043C2.21-0.028,2.372-0.008,2.493,0.085l13.312,8.503c0.094,0.078,0.154,0.191,0.154,0.313    c0,0.12-0.061,0.237-0.154,0.314L2.492,17.717c-0.07,0.057-0.162,0.087-0.25,0.087l-0.176-0.04    c-0.136-0.065-0.222-0.207-0.222-0.361V0.402C1.844,0.25,1.93,0.107,2.067,0.043z"
+                          />
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                  <br />
+                  <p>Badshah</p>
+                </li>
+                <li>
+                  <div class="artsts">
+                    <div class="content-overlay"></div>
+                    <button onclick="document.location='artists.html'">
+                      <img src="images/coldplay.jpg" alt="coldplay" />
+                      <div class="onOffButton">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          version="1.1"
+                          id="Capa_1"
+                          x="0px"
+                          y="0px"
+                          viewBox="0 0 17.804 17.804"
+                          xml:space="preserve"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M2.067,0.043C2.21-0.028,2.372-0.008,2.493,0.085l13.312,8.503c0.094,0.078,0.154,0.191,0.154,0.313    c0,0.12-0.061,0.237-0.154,0.314L2.492,17.717c-0.07,0.057-0.162,0.087-0.25,0.087l-0.176-0.04    c-0.136-0.065-0.222-0.207-0.222-0.361V0.402C1.844,0.25,1.93,0.107,2.067,0.043z"
+                          />
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                  <br />
+                  <p>Cold Play</p>
+                </li>
+              </ul>
+            </div>
+            <!-- Stations -->
+            <div class="stations">
+              <img src="images/station.PNG" alt="stations" />
+              <div class="stationImages">
+                <img src="images/love-station.jpg" alt="love" />
+                <p>Love</p>
+              </div>
+              <div class="stationImages">
+                <img src="images/retro-station.jpg" alt="retro" />
+                <p>Retro</p>
+              </div>
+              <div class="stationImages">
+                <img src="images/chill-station.jpg" alt="retro" />
+                <p>Chill</p>
+              </div>
+              <div class="stationImages">
+                <img src="images/workout-station.jpg" alt="retro" />
+                <p>Workout</p>
+              </div>
+              <div class="stationImages">
+                <img src="images/rock-station.jpg" alt="retro" />
+                <p>Rock</p>
+              </div>
+              <div class="stationImages">
+                <img src="images/pop-station.jpg" alt="retro" />
+                <p>Pop</p>
+              </div>
+            </div>
+            <!-- Song Lists Type Images -->
+            <!-- Images  -->
+            <div class="imageList">
+              <div class="imageType">
+                <img src="images/party.jpg" alt="party" />
+                <p>Party</p>
+              </div>
+              <div class="imageType">
+                <img src="images/electronic.jpg" alt="electronic" />
+                <p>Electronic</p>
+              </div>
+              <div class="imageType">
+                <img src="images/road-trip.jpg" alt="road-trip" class="last" />
+                <p>Road Trip</p>
+              </div>
+            </div>
+            <!-- Latest English Songs -->
+            <h3>Latest English</h3>
+            <div class="latest-songs">
+              <div class="songs-card">
+                <div class="imgBx">
+                  <img src="images/drunk-text-me.jpg" alt="drunk-text-me" />
+                </div>
+                <div class="details">
+                  <div class="content">
+                    <h2>
+                      drunk text me<br />
+                      <span>Lexi Jayde</span>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="songs-card">
+                <div class="imgBx">
+                  <img src="images/long-drive.jpg" alt="long-drive" />
+                </div>
+                <div class="details">
+                  <div class="content">
+                    <h2>
+                      Long Drives<br />
+                      <span>BoyWithUke</span>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="songs-card">
+                <div class="imgBx">
+                  <img
+                    src="images/fingers-crossed.jpeg"
+                    alt="fingers-crossed"
+                  />
+                </div>
+                <div class="details">
+                  <div class="content">
+                    <h2>
+                      Fingers Crossed<br />
+                      <span>Lauren Spencer-Smith</span>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="songs-card">
+                <div class="imgBx">
+                  <img src="images/boyfriend.png" alt="Boyfriend" />
+                </div>
+                <div class="details">
+                  <div class="content">
+                    <h2>
+                      Boyfriend<br />
+                      <span>Justin Bieber</span>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="songs-card">
+                <div class="imgBx">
+                  <img src="images/sacrifice.jpg" alt="sacrifice" />
+                </div>
+                <div class="details">
+                  <div class="content">
+                    <h2>
+                      Sacrifice<br />
+                      <span>The Weeknd</span>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="songs-card">
+                <div class="imgBx">
+                  <img src="images/birthdayCake.jpg" alt="birthday-cake" />
+                </div>
+                <div class="details">
+                  <div class="content">
+                    <h2>
+                      Birthday Cake
+                      <br />
+                      <span>Dylan Conrique</span>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Latest Hindi -->
+            <h3>Latest Hindi</h3>
+            <div class="latest-songs">
+              <div class="songs-card">
+                <div class="imgBx">
+                  <img src="images/meri-tarah.jpg" alt="meri-tarah" />
+                </div>
+                <div class="details">
+                  <div class="content">
+                    <h2>
+                      Meri Tarah<br />
+                      <span>Jubin Nautiyal and Payal Dev </span>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="songs-card">
+                <div class="imgBx">
+                  <img src="images/uff.jpg" alt="uff" />
+                </div>
+                <div class="details">
+                  <div class="content">
+                    <h2>
+                      Uff<br />
+                      <span>Shreya Ghoshal and Shreyas Puranik </span>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="songs-card">
+                <div class="imgBx">
+                  <img src="images/Phoonk-Le.jpg" alt="Phoonk-Le" />
+                </div>
+                <div class="details">
+                  <div class="content">
+                    <h2>
+                      Phoonk Le<br />
+                      <span>Nikhita Gandhi and Rangon </span>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="songs-card">
+                <div class="imgBx">
+                  <img src="images/Beqaaboo.jpg" alt="Beqaaboo" />
+                </div>
+                <div class="details">
+                  <div class="content">
+                    <h2>
+                      Beqaaboo<br />
+                      <span>Kausar Munir </span>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="songs-card">
+                <div class="imgBx">
+                  <img src="images/Dhokha.jpg" alt="Dhokha" />
+                </div>
+                <div class="details">
+                  <div class="content">
+                    <h2>
+                      Dhokha<br />
+                      <span>Arijit Singh and Manan Bhardwaj </span>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="songs-card">
+                <div class="imgBx">
+                  <img src="images/Kuch-Baatein.jpg" alt="Kuch Baatein" />
+                </div>
+                <div class="details">
+                  <div class="content">
+                    <h2>
+                      Kuch Baatein
+                      <br />
+                      <span>Jubin Nautiyal and Payal Dev </span>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="songs-card">
+    <div class="imgBx">
+      <img src="images/Soch-Liya.jpg" alt="Soch Liya">
+    </div>
+    <div class="details">
+      <div class="content">
+        <h2>Soch Liya<br>
+          <span>Arijit Singh
+</span>
+        </h2>
+      </div>
+    </div>
+</div> -->
+            </div>
+          </div>
+        </main>
+        <!-- Side Bar -->
+        <aside>
+          <!-- Side Bar topic name -->
+          <div class="sidebar">
+            <ul class="queue">
+              <li class="queue-name">
+                Queue
+              </li>
+              <li>
+                <div class="songlist">
+                  <label for="queueList">
+                    <div id="queue-list">
+                      Queue
+                    </div>
+                    <div class="arrow-down">
+                      <svg
+                        height="17"
+                        viewBox="0 0 1792 1792"
+                        width="17"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M1395 736q0 13-10 23l-466 466q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z"
+                        />
+                      </svg>
+                    </div>
+                  </label>
+                </div>
+              </li>
+            </ul>
+            <input type="checkbox" id="queueList" />
+            <ul class="toggleContent">
+              <li>
+                Playlists
+              </li>
+              <li>
+                Favourite Songs
+              </li>
+            </ul>
+            <!-- Cards of Songs -->
+            <div class="container">
+              <div class="card">
+                <div class="count">
+                  <span>01</span>
+                </div>
+                <div class="card-content">
+                  <!-- Image of song -->
+                  <div class="imgBx">
+                    <img src="images/mirage.jpg" alt="Mirage" />
+                  </div>
+                  <div class="details">
+                    <!-- Details of song -->
+                    <div class="content">
+                      <h4>
+                        Mirage<br />
+                        <span>Else</span>
+                      </h4>
+                      <!-- Favourite Icon  -->
+                      <div class="like-button">
+                        <iframe src="like-button.html"></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="count">
+                  <span>02</span>
+                </div>
+                <div class="card-content">
+                  <div class="imgBx">
+                    <img src="images/boyfriend.png" alt="Boyfriend" />
+                  </div>
+                  <div class="details">
+                    <div class="content">
+                      <h4>
+                        Boyfriend<br />
+                        <span>Justin Bieber</span>
+                      </h4>
+                      <div class="like-button">
+                        <iframe src="like-button.html"></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="count">
+                  <span>03</span>
+                </div>
+                <div class="imgBx">
+                  <img src="images/drunk-text-me.jpg" alt="drunk-text-me" />
+                </div>
+                <div class="details">
+                  <div class="content">
+                    <h4>
+                      Drunk Text Me<br />
+                      <span>Lexi Jayde</span>
+                    </h4>
+                    <div class="like-button">
+                      <iframe src="like-button.html"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="count">
+                  <span>04</span>
+                </div>
+                <div class="imgBx">
+                  <img src="images/long-drive.jpg" alt="Long Drives" />
+                </div>
+                <div class="details">
+                  <div class="content">
+                    <h4>
+                      Long Drives<br />
+                      <span>BoyWithUke</span>
+                    </h4>
+                    <div class="like-button">
+                      <iframe src="like-button.html"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="count">
+                  <span>05</span>
+                </div>
+                <div class="imgBx">
+                  <img src="images/fingers-crossed.jpg" alt="Fingers Crossed" />
+                </div>
+                <div class="details">
+                  <div class="content">
+                    <h4>
+                      Fingers Crossed<br />
+                      <span>Lauren Spencer-Smith</span>
+                    </h4>
+                    <div class="like-button">
+                      <iframe src="like-button.html"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="count">
+                  <span>06</span>
+                </div>
+                <div class="imgBx">
+                  <img src="images/sacrifice.jpg" alt="Sacrifice" />
+                </div>
+                <div class="details">
+                  <div class="content">
+                    <h4>
+                      Sacrifice<br />
+                      <span>The Weekend</span>
+                    </h4>
+                    <div class="like-button">
+                      <iframe src="like-button.html"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="count">
+                  <span>07</span>
+                </div>
+                <div class="imgBx">
+                  <img src="images/meri-tarah.jpg" alt="meri-tarah" />
+                </div>
+                <div class="details">
+                  <div class="content">
+                    <h4>
+                      Meri Tarah<br />
+                      <span>Jubin Nautiyal and Payal Dev</span>
+                    </h4>
+                    <div class="like-button">
+                      <iframe src="like-button.html"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="count">
+                  <span>08</span>
+                </div>
+                <div class="imgBx">
+                  <img src="images/uff.jpg" alt="uff" />
+                </div>
+                <div class="details">
+                  <div class="content">
+                    <h4>
+                      Uff<br />
+                      <span>Shreya Ghoshal and Shreyas Puranik</span>
+                    </h4>
+                    <div class="like-button">
+                      <iframe src="like-button.html"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="count">
+                  <span>09</span>
+                </div>
+                <div class="imgBx">
+                  <img src="images/Phoonk-Le.jpg" alt="Phoonk-Le" />
+                </div>
+                <div class="details">
+                  <div class="content">
+                    <h4>
+                      Phoonk Le<br />
+                      <span>Nikhita Gandhi and Rangon</span>
+                    </h4>
+                    <div class="like-button">
+                      <iframe src="like-button.html"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="count">
+                  <span>10</span>
+                </div>
+                <div class="imgBx">
+                  <img src="images/Beqaaboo.jpg" alt="Beqaaboo" />
+                </div>
+                <div class="details">
+                  <div class="content">
+                    <h4>
+                      Beqaaboo<br />
+                      <span>Kausar Munir</span>
+                    </h4>
+                    <div class="like-button">
+                      <iframe src="like-button.html"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="count">
+                  <span>11</span>
+                </div>
+                <div class="imgBx">
+                  <img src="images/Dhokha.jpg" alt="Dhokha" />
+                </div>
+                <div class="details">
+                  <div class="content">
+                    <h4>
+                      Dhokha<br />
+                      <span>Arijit Singh and Manan Bhardwa</span>
+                    </h4>
+                    <div class="like-button">
+                      <iframe src="like-button.html"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="count">
+                  <span>12</span>
+                </div>
+                <div class="imgBx">
+                  <img src="images/Soch-Liya.jpg" alt="Soch-Liya" />
+                </div>
+                <div class="details">
+                  <div class="content">
+                    <h4>
+                      Soch Liya<br />
+                      <span>Arijit Singh</span>
+                    </h4>
+                    <div class="like-button">
+                      <iframe src="like-button.html"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </content>
+      <footer>
+        <object data="footer.html" type="text/html"> </object>
+      </footer>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>

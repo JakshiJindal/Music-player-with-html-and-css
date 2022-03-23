@@ -1,0 +1,1045 @@
+/* header */
+#root {
+  background-color: #0b1026;
+  padding: 0;
+}
+/* Body */
+#container {
+  display: flex;
+  margin: 2rem 1rem 0rem 2rem;
+}
+.bold {
+  font-weight: bold;
+}
+.color-white {
+  color: white;
+}
+/* Navbar */
+#header iframe{
+  height: auto;
+  width: 100%;
+  border: 0;
+}
+ul.header {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  letter-spacing: 0.1rem;
+    font-family: Sans-serif;
+}
+ul.header >li {
+  float: left;
+  display: inline-block;
+}
+ul.header li > div,form{
+  padding: 1rem 2rem 1rem 0rem;
+}
+ul.header >li.move-right{
+  float: right;
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+}
+#logo-image {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 0.5rem;
+}
+#logo-name {
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+#favourites {
+   margin-top: 1rem;
+}
+/* Search bar */
+#search-box {
+  border-radius: 0.5rem;
+  height: 27%;
+  width: 18rem;
+  padding: 0.7rem;
+  border: none;
+  background-color: #11193e;
+  margin-top: 0.5rem;
+}
+.card-details{
+  color: white;
+}
+/* Bell Icon */
+.bell-icon {
+  margin-top: 1rem;
+  color: white;
+}
+/* Profile photo */
+#profile-photo > img {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+}
+
+/* Content */
+#content{
+  padding: 2rem 2rem 0rem 2rem;
+  display: flex;
+}
+
+/* Main */
+main {
+  width: 68%;
+  padding-left: 5rem;
+  margin-bottom: 5rem;
+}
+/* Images */
+.images img{
+    width: 100%;
+    max-width: 29%;
+    height: auto;
+    margin:3.5rem 1rem 0rem 0rem;
+   transition: transform .2s;
+}
+.images img:hover{
+   transform: scale(1.2);
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+   overflow: hidden;
+}
+.images:hover img:not(:hover) {
+    filter: opacity(50%);
+}
+/* Queue */
+.arrow-down svg path{
+  color: #3ba797;
+}
+ul.queue {
+  list-style-type: none;
+  overflow: hidden;
+  letter-spacing: 0.1rem;
+    font-family: Sans-serif;
+    width: 80%;
+}
+ul.queue >li {
+  float: right;
+  display: inline-block;
+}
+ul.queue li > div{
+  padding: 1rem 2rem 1rem 0rem;
+}
+ul.queue div#queue-list,ul.queue >div.arrow-down{
+  float: right;
+}
+ul.queue div#queue-list{
+  color: #3ba797;
+  font-weight: bolder;
+  margin-top: 2.2rem;
+}
+ul.queue >li.queue-name {
+ color: white;
+ font-size: 2rem;
+ margin-right: 2.5rem;
+ float: left;
+}
+.arrow-down{
+  margin: 2.2rem 0rem 0rem 3rem;
+  font-weight: bold;
+  position: absolute;
+}
+aside {
+  width: 32%;
+  padding: 0px 35px 0px 20px;
+}
+aside object{
+    width: 36vw;
+    height: 220vh;
+}
+/* Queue header list toggle */
+.toggleContent ul {
+    margin: 0;
+    padding: 0;
+  }
+ .toggleContent li {
+    list-style: none;
+  }
+input[type="checkbox"] {
+  display: none;
+}
+input:checked + ul.toggleContent {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    padding: 0px 0px 0rem 5rem;
+    margin: 0;
+}
+ul.toggleContent {
+    display: none;
+}
+ul.toggleContent li {
+    padding: 5px 20px;
+    background-color: #FFF;
+    border-bottom: 1px solid black;
+    margin: 0;
+    width: 8rem;
+}
+/* Queue Cards */
+.container {
+  flex-wrap: wrap;
+  display: flex;
+}
+.card {
+  position: relative;
+  width: 100%;
+  margin: 0px 10px 0px 10px;
+  box-sizing: border-box;
+}
+.card .count{
+  position: absolute;
+    margin-top: 40px;
+}
+.card .imgBx {
+  position: absolute;
+  margin: 20px 20px 20px 20px;
+}
+.card .imgBx img {
+    width: 4vw;
+    height: 8vh;
+    object-fit: cover;
+}
+.card .details {
+  justify-content: center;
+    margin: 0;
+    width: 40%;
+    padding-left: 83px;
+}
+.card .details .content {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+.card .details .content h4{
+  color: #FFF;
+  font-family: Sans-serif;
+  font-size: 14px;
+    font-weight: bold;
+    position: relative;
+}
+.card .details .content h4 span,.card .count span {
+  font-size: 12px;
+  color: #777;
+  font-family: Sans-serif;
+}
+.card .details .content .like-button {
+  padding:2rem 0rem 0rem 12rem;
+  position: absolute;
+}
+.like-button svg path {
+  color: white;
+}
+/* Latest Releases */
+.latest-releases h3,h3{
+  color: #FFF;
+  font-family: Sans-serif;
+}
+.latest-releases .ltRlsCard {
+  position: relative;
+  width: 50%;
+  padding-bottom: 3%;
+}
+.ltRlsCard .ltRlsImgBx {
+  position: absolute;
+}
+.ltRlsCard .ltRlsImgBx img {
+    object-fit: cover;
+    width: 8vw;
+  height: 17vh;
+}
+/* on hover play button */
+.content-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
+}
+.popular-artists li{
+  position: relative;
+}
+.ltRlsImgBx:hover img,.artsts:hover img{
+  opacity: 50%;
+}
+.ltRlsImgBx img{
+  width: 100%;
+}
+.onOffButton,.onButton {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 40%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.ltRlsImgBx:hover .onOffButton{
+  opacity: 1;
+  transition: all 0.3s ease-in-out 0s;
+}
+.onOffButton svg path,.onButton svg path{
+  color: #fff;
+}
+.ltRlsCard .details {
+  justify-content: center;
+    margin: 0;
+    width: 73%;
+    padding-left: 30%;
+}
+.ltRlsCard .details .content {
+  display: flex;
+  align-items: center;
+  padding-top: 28px;
+  box-sizing: border-box;
+}
+.ltRlsCard .details .content h4 {
+  color: #FFF;
+  font-family: Sans-serif;
+  line-height: 1.5;
+  margin-top: 0;
+  width: 60%;
+}
+.ltRlsCard .details .content h4 span,.card .count span {
+  font-size: 12px;
+  color: #777;
+  font-family: Sans-serif;
+}
+.dotted-menu {
+    margin: -40% 0px 0px 20%;
+    position: relative;
+}
+.dotted-menu svg path{
+  color: #9cabba;
+}
+/* Latest Release dotted-menu list */
+.songlist{
+  position: relative;
+  margin: -40% 0px 0px 20%;
+}
+.toggle-content ul {
+    margin: 0;
+    padding: 0;
+  }
+ .toggle-content li {
+    list-style: none;
+  }
+
+.songlist input[type="checkbox"] {
+  display: none;
+}
+
+.songlist input:checked + ul.toggle-content {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+}
+ul.toggle-content {
+    display: none;
+}
+ul.toggle-content li {
+    padding: 5px 20px;
+    background-color: #FFF;
+    border-bottom: 1px solid black;
+    margin: 0;
+    width: 8rem;
+}
+/* Popular Artists */
+.popular-artists ul{
+ list-style-type: none;
+    padding: 0;
+    display: inline;
+    z-index: 2;
+}
+.popular-artists ul li .artsts {
+display: inline;
+}
+.popular-artists ul >li{
+  display: inline-block;
+  width: 17%;
+  padding: 0;
+  margin-right: 16px;
+}
+.artist-images{
+  padding-right: 2%;
+} 
+.popular-artists h3,.popular-artists p{
+  color: #FFF;
+  font-family: Sans-serif;
+}
+.popular-artists p{
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0.01rem;
+}
+.popular-artists img{
+  width: 100%;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.artsts:hover .onOffButton{
+  opacity: 1;
+}
+.artsts .onOffButton{
+  top: 40%;
+}
+.artsts button{
+   padding: 0;
+    border: 0;
+    background: none;
+  }
+/* Stations with images */
+.stations{
+  width: 100%;
+  height: auto;
+  background-color: #0f1642;
+  margin-top: 38px;
+}
+.stations >img{
+  padding: 14px 15px 0px 14px;
+}
+.stations .stationImages{
+  display: inline;
+  position: relative;
+
+}
+.stations .stationImages img{
+    width: 10%;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0px 11px 18px 6px;
+    opacity: 70%;
+}
+.stations .stationImages p{
+  position: absolute;
+  color: white;
+  transform: translate(-50%, -50%);
+  left: 44%;
+  bottom: 0;
+  z-index: 2;
+  padding-bottom: 17px;
+}
+/* Types of Music Images */
+.imageType{
+  position: relative;
+    display: inline;
+    overflow: hidden;
+}
+.imageList img{
+    width: 100%;
+    max-width: 31.5%;
+    height: 24vh;
+    margin: 2rem 0.5rem 0rem 0rem;
+    object-fit: cover;
+    opacity: 50%;
+    transition: all 0.2s ease-in-out;
+}
+.imageType:hover img{
+  transform: scale(1.1);
+}
+.imageType p{
+    position: absolute;
+    color: white;
+    transform: translate(-50%, -50%);
+    left: 44%;
+    bottom: 0;
+    z-index: 2;
+    padding-bottom: 28px;
+    font-weight: bold;
+}
+.imageList img.last{
+  margin-right: 0 !important; 
+}
+/* Latest English Songs */
+.latest-songs {
+  width: 100%;
+  min-height: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+ .latest-songs .songs-card {
+    position: relative;
+  min-height: 200px;
+  box-sizing: border-box;
+    width: 15%;
+    margin-right: 12px;
+  }
+  .latest-songs .songs-card .imgBx {
+    position: relative;
+    width: 100%;
+    height: 120px;
+  }
+  .latest-songs .songs-card .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.latest-songs .songs-card .details {
+  right: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+    width: 100%;
+}
+.latest-songs .songs-card .details .content {
+  padding: 10px 20px 10px 0px;
+  box-sizing: border-box;
+}
+.latest-songs .songs-card .details .content h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.4em;
+  font-weight: 400;
+  color: #FFF;
+}
+.latest-songs .songs-card .details .content h2 span {
+  font-size: 14px;
+  color: #777;
+}
+.dotted-menu iframe{
+  width: 40px;
+    height: 50px;
+    border: 0;
+}
+.like-button iframe{
+  width: 40px;
+    height: 50px;
+    border: 0;
+}
+/* Footer : Playing Bar */
+footer {
+    border-top: 1px solid #282828;
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+}
+.footer-bar{
+    background-color: #181818;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    min-width: 620px;
+    justify-content: space-between;
+    padding: 0 16px 0px 76px;
+    height: auto;
+}
+.song-details {
+  position: relative;
+  width: 100%;
+  margin: 0px 10px 0px 10px;
+  box-sizing: border-box;
+  display: flex;
+}
+/* Image box song details */
+.card-content{
+  width: 30%;
+}
+.song-details .imgBx {
+  position: absolute;
+  margin: 20px 20px 20px 20px;
+}
+.song-details .imgBx img {
+    width: 4vw;
+    height: 8vh;
+    object-fit: cover;
+}
+.song-details .details {
+  justify-content: center;
+    margin: 0;
+    width: 40%;
+    padding-left: 83px;
+}
+.song-details .details .content {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+.song-details .details .content h4{
+  color: #FFF;
+  font-family: Sans-serif;
+  font-size: 14px;
+    font-weight: bold;
+    position: relative;
+}
+.song-details .details .content h4 span{
+  font-size: 12px;
+  color: #777;
+  font-family: Sans-serif;
+}
+.song-details .details .content .like-button {
+  padding: 1.5rem 0rem 0rem 3rem;
+  position: absolute;
+}
+.like-button svg path {
+  color: #777;
+}
+/* player controls(next previous on buttons) */
+.player-controls{
+margin-top: 1.5rem;
+width: 45%;
+}
+.player-controls button{
+  background-color: #181818;
+  border: none;
+  padding: 0px 15px 14px 15px;
+  cursor: pointer;
+}
+.player-controls button svg path{
+  color: #b3b3b3;
+}
+.player-controls button.button-shuffle{
+  padding-left: 90px;
+}
+.progress-bar {
+   background-color: rgb(192, 192, 192);
+   width: 100%;
+   border-radius: 15px;
+}
+ .playback-bar {
+   background-color: #33e587;
+   padding: 0.5%;
+   text-align: right;
+   border-radius: 50%;
+   width: 50%;
+}   
+   /* Add queue extra controls in footer */
+.ExtraControls{
+  width: 35%;
+  align-items: center;
+  display: flex;
+}       
+.ExtraControls button{
+  background-color: #181818;
+  border: none;
+  padding: 0px 5px 0px 15px;
+  cursor: pointer;
+}
+.ExtraControls button svg path{
+  color: #b3b3b3;
+}
+.ExtraControls button.control-button{
+  padding-left: 3rem;
+}
+.ExtraControls button.volume-bar{
+  padding-right: 1rem;
+}
+.ExtraControls .progress-bar {
+   width: 30%;
+   padding-left: 10px;
+}
+.ExtraControls .playback-bar {
+   padding: 1%;
+   width: 30%;
+} 
+/* Artists Description Page */
+.recently-played{
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 0rem;
+}
+.view-all {
+    font-size: 12px;
+    color: #FFF;
+    padding-top: 0.5rem;
+    float: right;
+}
+ul.aside-bar{
+  list-style-type: none;
+    overflow: hidden;
+    font-family: Sans-serif;
+    width: 100%;
+  padding: 0;
+}
+ul.aside-bar >li{
+  display: inline-block;
+}
+/* Artist description card */
+.artist-description{
+  height: 380px;
+  background-color: #131b40;
+ bottom: blur(9px);
+ display: flex;
+}
+.artist-description .image{
+  width: 60%;
+}
+.artist-description img{
+ width: 100%;
+ height: 370px;
+ object-fit: cover;
+ border-bottom-left-radius:100px 85px;
+ border-bottom-right-radius:100px 85px; 
+ box-shadow: 0px 0px 15px #131b40;
+  -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+.artist-description .description{
+  margin: 3rem 1rem 4rem 2rem ;
+  width: 100%;
+}
+.artist-description .artist-desc{
+  display: flex;
+}
+.artist-description .artist-desc h3{
+  margin: 0;
+  margin-bottom: 0.3rem;
+}
+.artist-description .artist-desc p{
+  color: #99a0b5;
+  margin: 0;
+}
+.singer-name{
+  width: 80%;
+}
+.followers{
+  color: #99a0b5;
+  width: 20%;
+  font-size: 15px;
+}
+.description p{
+  color: #99a0b5;
+  font-size: 15px;
+}
+.description button{
+  color: white;
+    background: linear-gradient(45deg, #3425af
+, #bd47dc);
+    border: 0;
+    padding: 10px 40px;
+    margin-bottom: 1rem;
+}
+.description span{
+  color: white;
+  padding-left: 5rem;
+}
+.description .tracks{
+ font-size: 13px;
+}
+/* Arstists Songs cards */
+.artist-cards{
+  margin-top: 10px;
+}
+.artist-cards .card{
+  background-color: #191e32;
+  padding: 0.1rem;
+  margin: 0;
+  margin-bottom: 0.4rem;
+}
+.artist-cards .card .details .content .like-button {
+    padding-left:70%;
+}
+.like-button{
+  display: flex;
+}
+.like-button .plus-icon svg path{
+  color: #93a8b3;
+}
+.like-button iframe{
+  margin-top: 0.2rem;
+}
+.plus-icon{
+  margin-left: 1.5rem;
+}
+.similarArtists .card{
+  height: 120px;
+  margin-bottom: 10px;
+}
+.similarArtists .card .imgBx img {
+    width: 8vw;
+    height: 18vh;
+    object-fit: cover;
+}
+.similarArtists .card .details .content .like-button {
+    padding: 0rem 0rem 0rem 7rem;
+    margin-bottom: 64px;
+    display: flex;
+}
+.similarArtists .card .details .content .like-button span{
+  color: #a2a5b6;
+  margin-top: 1.5rem;
+  margin-left: -1.5rem;
+}
+.similarArtists .card .details {
+    padding-left: 153px;
+}
+.similarArtists .card .details .content{
+    padding-top: 35px;
+}
+.similarArtists .card .details .content h4 span{
+ margin-top: 2rem;
+}
+.similarArtists .card .imgBx {
+    position: absolute;
+    margin-left: 0;
+}
+/* Responsive */
+@media (max-width: 1200px) {
+  .container {
+    width: 98%;
+  }
+  .popular-artists img {
+    height: 18vh;
+}
+.popular-artists ul >li {
+    margin-right: 0.7rem;
+}
+}
+@media screen and (max-width: 991px) {
+   #root {
+    margin: 0;
+    background-color: blue;
+}
+#main {
+  margin-left: 0;
+}
+main {
+    width: 68%;
+     margin-left: 0; 
+     padding-left: 0;
+}
+.images img{
+    max-width: 25%;
+}
+aside {
+  width: 40%;
+    padding: 0px 44px 0px 0px;
+}
+.queue {
+ width: 20%;
+}
+ul.queue{
+  width: 230px;
+}
+.card{
+  margin: 0px 10px;
+}
+  .card .imgBx {
+  position: absolute;
+    width: 15%;
+    height: 60%;
+}
+.card .imgBx img {
+  width: 40px;
+  height: 100%;
+  object-fit: cover;
+}
+.latest-releases .ltRlsCard {
+    width: 100%;
+    padding-bottom: 3%;
+}
+.ltRlsCard .ltRlsImgBx img {
+  width: 65%;
+  object-fit: contain;
+}
+.dotted-menu {
+    margin: -30% 0px 0px 30%;
+}
+.ltRlsCard .details {
+    padding-left: 20%;
+}
+.ltRlsCard .details .content {
+    padding-top: 18px;
+}
+.popular-artists ul >li {
+    margin-right: 0.2rem;
+}
+.popular-artists img {
+    height: 10vh;
+}
+.stations .stationImages img{
+    width: 15%;
+}
+.stations .stationImages p {
+    padding-bottom: 22px;
+    font-size: 11px;
+}
+.imageList img{
+    max-width: 31%;
+}
+.card .details .content .like-button {
+    padding: 2rem 0rem 0rem 7rem;
+}
+ul.toggle-content li {
+    padding: 2px 20px;
+}
+ul.queue >li.queue-name {
+    margin-right: 1.5rem;
+    float: left;
+}
+input:checked + ul.toggleContent {
+    display: block;
+    position: absolute;
+    z-index: 2;
+}
+.artist-cards .card .details .content .like-button {
+    padding-left: 38%;
+}
+.artist-description {
+    height: 460px;
+}
+.followers{
+  width: 50%;
+}
+.similarArtists .card .details{
+  padding-left: 83px;
+}
+#header iframe {
+    height: 220px;
+}
+aside object {
+    width: 46vw;
+}
+}
+@media screen and (max-width: 740px) {
+  .ltRlsCard .ltRlsImgBx {
+    width: 42%;
+}
+.ltRlsCard .details {
+    padding-left: 30%;
+}
+.imageList img{
+    max-width: 30%;
+    height: 18vh;
+}
+.imageType p {
+    padding-bottom: 2.5vh;
+}
+}
+@media screen and (max-width: 600px) {
+  #root {
+    padding: 0;
+    margin: 0;
+    background-color: pink;
+  }
+  .search-bar{
+  float: left;
+}
+#main {
+  width: 100%;
+    margin: 2rem 0rem;
+  }
+#content{
+  display: block;
+}
+.queue {
+ width: 50%;
+}
+main {
+  width: 100%;
+  margin: 0;
+}
+.images img {
+  margin: 0;
+  max-width: 32%;
+}
+ul.queue{
+  width: 75%;
+}
+ul.queue div#queue-list{
+  margin-left: 0;
+}
+ul.queue >li.queue-name{
+  margin-right: 3rem;
+  float: left;
+}
+aside {
+    padding: 0px;
+    width: 100%;
+}
+.card {
+    width: 90%;
+    margin: 10px 0px 10px 50px;
+  }
+  .card .imgBx {
+    position: absolute;
+  }
+  .card .details {
+    position: relative;
+  }
+  .latest-releases .ltRlsCard {
+  position: relative;
+  width: 50%;
+}
+.ltRlsCard .ltRlsImgBx img {
+  width: 65%;
+  height: 100%;
+}
+.dotted-menu {
+    margin: -40% 0px 0px 20%;
+}
+.ltRlsCard .details .content h4 {
+    font-size: 12px;
+}
+.ltRlsCard .details .content h4 span {
+    font-size: 8px;
+}
+.ltRlsCard .details .content {
+    padding-top: 10px;
+}
+.ltRlsCard .details {
+    padding-left: 27%;
+}
+.ltRlsCard .ltRlsImgBx {
+    width: 35%;
+}
+ul.toggle-content li {
+    padding: 2px 10px;
+}
+.artist-cards .card .details .content .like-button {
+    padding-left: 90%;
+}
+.artist-cards .card{
+  width: 100%;
+}
+.similarArtists .card .details .content .like-button {
+    padding: 0rem 0rem 0rem 11rem;
+}
+ul.aside-bar {
+    width: 90%;
+}
+.card .details .content .like-button {
+    padding: 2rem 0rem 0rem 11rem;
+}
+#header iframe {
+    height: 290px;
+}
+.similarArtists .card .imgBx img {
+    width: 18vw;
+    height: 18vh;
+}
+.similarArtists .card .details {
+    padding-left: 103px;
+}
+aside object {
+    width: 66vw;
+}
+}
+
